@@ -126,7 +126,7 @@ GEM
     et-orbi (1.4.0)
       tzinfo
     event_stream_parser (1.0.0)
-    faraday (2.14.3)
+    faraday (2.14.4)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
@@ -157,7 +157,7 @@ GEM
     jbuilder (2.15.1)
       actionview (>= 7.0.0)
       activesupport (>= 7.0.0)
-    json (2.21.1)
+    json (2.21.2)
     jwt (3.2.0)
       base64
     kamal (2.12.0)
@@ -379,18 +379,19 @@ GEM
       rubocop-performance (>= 1.24)
       rubocop-rails (>= 2.30)
     ruby-progressbar (1.13.0)
-    ruby_llm (1.16.0)
+    ruby_llm (2.0.0)
       base64
       event_stream_parser (~> 1)
       faraday (>= 1.10.0)
       faraday-multipart (>= 1)
       faraday-net_http (>= 1)
       faraday-retry (>= 1)
-      marcel (~> 1)
-      ruby_llm-schema (~> 0)
+      json (< 3)
+      marcel (>= 1.0, < 3)
+      schematist (~> 1.1)
       zeitwerk (~> 2)
-    ruby_llm-schema (0.4.0)
     rubyzip (3.4.1)
+    schematist (1.1.0)
     securerandom (0.4.1)
     selenium-webdriver (4.46.0)
       base64 (~> 0.2)
@@ -476,7 +477,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.8.2)
+    zeitwerk (2.8.3)
 
 PLATFORMS
   aarch64-linux
@@ -561,7 +562,7 @@ CHECKSUMS
   erubi (1.13.1) sha256=a082103b0885dbc5ecf1172fede897f9ebdb745a4b97a5e8dc63953db1ee4ad9
   et-orbi (1.4.0) sha256=6c7e3c90779821f9e3b324c5e96fda9767f72995d6ae435b96678a4f3e2de8bc
   event_stream_parser (1.0.0) sha256=a2683bab70126286f8184dc88f7968ffc4028f813161fb073ec90d171f7de3c8
-  faraday (2.14.3) sha256=1882247e6766615c8220b4392bf1d27f6ebb63d8e28267587cef1fb0bf37f278
+  faraday (2.14.4) sha256=9bb4408c44621b0dbaaaa39e5dbfc4dbe58cc6751b6eb94d16ae9e1f2f2fab6e
   faraday-multipart (1.2.0) sha256=7d89a949693714176f612323ca13746a2ded204031a6ba528adee788694ef757
   faraday-net_http (3.4.4) sha256=0e78af151747ed1b00f33e25973b4bc220d7f16c00c39676817c8b12331eb588
   faraday-retry (2.4.0) sha256=7b79c48fb7e56526faf247b12d94a680071ff40c9fda7cf1ec1549439ad11ebe
@@ -574,7 +575,7 @@ CHECKSUMS
   io-console (0.8.2) sha256=d6e3ae7a7cc7574f4b8893b4fca2162e57a825b223a177b7afa236c5ef9814cc
   irb (1.18.0) sha256=de9454a0703a54704b9811a5ef31a60c86949fbf4013fcf244fabc7c775248e3
   jbuilder (2.15.1) sha256=2430bec28fb0cebacb5875b1009cf9d8bc3c303ccb810c4c8b062a4b51457637
-  json (2.21.1) sha256=13a43df75d95641443f5702dff350f237164a9d811ff0f2c2800d4d980220583
+  json (2.21.2) sha256=1f1d3b7cf2b3ba1a69beca0bb6db13d5438b80bff3cd54cdaaa620b9b07c1c6a
   jwt (3.2.0) sha256=5419b1fe37b1da0982bd07051f573a8b8789ab724c2aa7e785e4784a3ed217d7
   kamal (2.12.0) sha256=c51d1ab085e515470f98d0c0f043637122b5ebf76e8b610cb1fbbed0b7f9b8fa
   language_server-protocol (3.17.0.6) sha256=5ef2c0c138f8267e1bc631d3328347d354f96724b0af22f2c79516120443b7f0
@@ -658,9 +659,9 @@ CHECKSUMS
   rubocop-rails (2.36.0) sha256=105a5f5b0001ff2ef28a3af90da50862464e0775e8d0016d599079c0ca408bdb
   rubocop-rails-omakase (1.1.0) sha256=2af73ac8ee5852de2919abbd2618af9c15c19b512c4cfc1f9a5d3b6ef009109d
   ruby-progressbar (1.13.0) sha256=80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33
-  ruby_llm (1.16.0) sha256=26bd5310cf2ce55f74a60f8aae0b0d0327b586ff4532c84828103c3b2b905a18
-  ruby_llm-schema (0.4.0) sha256=e930f5a5316f9301bff3fb7fe572e44727d05bb8e50621001bbb49a47d63b8da
+  ruby_llm (2.0.0) sha256=b3ea5978f544c1c1edf74636fe4ac1d24129127deb44e4c4e7c58df11a4b9e3b
   rubyzip (3.4.1) sha256=0a79e745b5c25872ebd148457df5665da8530ed8626c993b01457128f173ca02
+  schematist (1.1.0) sha256=905d8f0286830926e77e0d631bee325ee741c4b99640bc99735593b40ba73e7b
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
   selenium-webdriver (4.46.0) sha256=cb6cfa6f79eac041749df0b14cdcb0e9fe5df3715a64c77bfaa56b345b99f957
   sitepress-core (4.1.1) sha256=39a94246e94b2d7a5f51239677be2edc330c100cdca75b70e3267bb903e9744c
@@ -693,7 +694,7 @@ CHECKSUMS
   websocket-driver (0.8.2) sha256=97c556b019bf3410b4961002ac501621e9322d3f8a7bc02161a09301cc4c4146
   websocket-extensions (0.1.5) sha256=1c6ba63092cda343eb53fc657110c71c754c56484aad42578495227d717a8241
   xpath (3.2.0) sha256=6dfda79d91bb3b949b947ecc5919f042ef2f399b904013eb3ef6d20dd3a4082e
-  zeitwerk (2.8.2) sha256=7212a61311083c604184b1ea2574b9aa05cd14f855a0841c06985cabe9181d12
+  zeitwerk (2.8.3) sha256=2c85125a8467ce069e20123d1e709a08955c9d29c118c25b46b7b7fafdbb92e5
 
 BUNDLED WITH
   4.0.3
